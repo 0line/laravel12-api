@@ -1,6 +1,6 @@
 <?php
 
-namespace Zeroline\Domain\Auth\Domain;
+namespace Zeroline\Auth\Domain;
 
 use Illuminate\Auth\AuthenticationException;
 

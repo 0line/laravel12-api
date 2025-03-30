@@ -2,6 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Zeroline\Shared\Domain\Bus\Command;
+namespace Zeroline\Shared\Bus\Command\Domain;
 
 interface CommandHandler {}

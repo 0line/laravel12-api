@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Zeroline\Shared\Domain;
-namespace Lambdish\Phunctional;
 
 use DateTimeImmutable;
 use DateTimeInterface;
@@ -58,15 +57,15 @@ final class Utils
 
     public static function filesIn(string $path, string $fileType): array
     {
-        return filter(
+        /* return filter(
             scandir($path),
             static fn(string $possibleModule): bool => strstr($possibleModule, $fileType) !== false
-        );
-        /* $scanned = scandir($path);
+        ); */
+        $scanned = scandir($path);
         return array_values(array_filter(
             $scanned,
             static fn(string $possibleModule): bool => strstr($possibleModule, $fileType) !== false
-        )); */
+        ));
     }
 
     public static function iterableToArray(iterable $iterable): array
